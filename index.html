@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ideal Dog/Cat — Pet Shop Minimalista</title>
+  <meta name="description" content="Ideal Dog/Cat — Pet shop minimalista com produtos selecionados para cães e gatos." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fafafa;
+      --text: #111;
+      --muted: #666;
+      --accent: #3b82f6;
+      --card: #fff;
+      --border: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      padding: 1rem 2rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--card);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h1 { font-size: 1.2rem; font-weight: 600; margin: 0; }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+    nav a:hover { color: var(--accent); }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+    .btn {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .product {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1rem;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+    .product h3 {
+      margin: 1rem 0 0.5rem;
+      font-size: 1rem;
+    }
+    .product p { color: var(--muted); font-size: 0.9rem; margin: 0 0 0.75rem; }
+    .price { font-weight: 600; color: var(--accent); }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      padding: 2rem 0;
+      border-top: 1px solid var(--border);
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ideal Dog/Cat</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Bem-vindo à Ideal Dog/Cat</h2>
+      <p>Um pet shop minimalista com tudo que seu cão e gato precisam. Rações, brinquedos e acessórios cuidadosamente selecionados para o bem-estar do seu melhor amigo.</p>
+      <button class="btn">Ver Produtos</button>
+    </section>
+
+    <section id="produtos">
+      <h2 style="text-align:center; font-size:1.5rem; margin-bottom:1rem;">Produtos em Destaque</h2>
+      <div class="grid">
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=600" alt="Ração para cães" />
+          <h3>Ração Premium 15kg</h3>
+          <p>Nutrição completa para cães adultos.</p>
+          <div class="price">R$ 249,90</div>
+        </div>
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?q=80&w=600" alt="Brinquedo para gato" />
+          <h3>Brinquedo Interativo</h3>
+          <p>Diversão e estímulo para o seu gato.</p>
+          <div class="price">R$ 89,90</div>
+        </div>
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1525253086316-d0c936c814f8?q=80&w=600" alt="Coleira pet" />
+          <h3>Coleira Confort</h3>
+          <p>Ajustável e super confortável.</p>
+          <div class="price">R$ 59,90</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" style="margin-top:3rem; text-align:center;">
+      <h2>Sobre Nós</h2>
+      <p style="max-width:600px; margin:0.5rem auto; color:var(--muted);">A Ideal Dog/Cat nasceu da paixão por animais e do desejo de oferecer produtos de qualidade com design simples e atendimento humano. Nosso foco é o conforto e a felicidade do seu pet.</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Ideal Dog/Cat — Todos os direitos reservados.
+  </footer>
+</body>
+</html>
